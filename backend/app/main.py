@@ -7,12 +7,12 @@ from .stocks import get_dow30_data
 app = FastAPI()
 
 
-@app.get("/api/")
+@app.get("/api")
 async def index():
     return {"message": "Hello World", "status": True, "data": {}}
 
 
-@app.get("/api/stocks/")
+@app.get("/api/stocks")
 async def getStocks(start: Optional[str] = None, end: Optional[str] = None):
     if start is None or end is None:
         return {"message": "start and end is required", "status": False, "data": {}}
