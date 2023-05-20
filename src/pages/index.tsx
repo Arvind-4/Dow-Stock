@@ -15,6 +15,7 @@ import { getDefaultEndDate, getDefaultStartDate } from '@src/utils/dates';
 import { fetchData } from '@src/utils/data';
 import options from '@src/chart/options';
 import Header from '@src/components/Header';
+import Loading from '@src/components/Loading';
 
 ChartJS.register(
   CategoryScale,
@@ -66,7 +67,9 @@ export default function Home() {
           options={options}
           ref={lineChartRef}
         />
-      ) : null}
+      ) : (
+        <Loading />
+      )}
       <br />
       <br />
 
