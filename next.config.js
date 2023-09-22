@@ -5,7 +5,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   experimental: {
-    forceSwcTransforms: false,
+    forceSwcTransforms: true,
   },
 };
 
