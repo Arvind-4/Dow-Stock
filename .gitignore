@@ -146,6 +146,7 @@ dmypy.json
 .pyre/
 *.DS_Store
 _temp_extension
+lib64
 junit.xml
 [uU]ntitled*
 notebook/static/*
@@ -198,3 +199,4 @@ yarn-error.log*
 .vercel
 *.tsbuildinfo
 package-lock.json
+poetry.lock
