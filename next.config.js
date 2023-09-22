@@ -3,7 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
-  }
+  },
+  experimental: {
+    forceSwcTransforms: false,
+  },
 };
 
 module.exports = nextConfig;
